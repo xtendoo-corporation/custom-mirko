@@ -7,9 +7,10 @@
     "license": "LGPL-3",
     "application": True,
     "depends": [
-        "res_partner",
+        "contacts",
     ],
     "data": [
+        "views/res_partner_view.xml",
     ],
     "installable": True,
 }
