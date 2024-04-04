@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Definicion de la vista-->
+    <record id="academy_group_action" model="ir.actions.act_window">
+        <field name="name">Groups</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="res_model">academy.group</field>
+        <field name="help" type="html">
+            <tree>
+                <field name="name"/>
+            </tree>
+            <p class="o_view_nocontent_smiling_face">
+                Create a Title
+            </p>
+            <p>
+                Manage Contact Titles as well as their abbreviations (e.g. "Mr.", "Mrs.", etc).
+            </p>
+        </field>
+    </record>
+
+
+    <!--Formulario de edicion-->
+<!--    <record id="academy_group_form" model="ir.ui.view">-->
+<!--        <field name="name">academy.group.form</field>-->
+<!--        <field name="model">academy.group</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form string="Partner Titles">-->
+<!--                <field name="name"/>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+    <!--&lt;!&ndash;    CONSULTA&ndash;&gt;-->
+    <!--            <record id="academy_group_tag_view_search" model="ir.ui.view">-->
+    <!--            <field name="name">academy.group.search</field>-->
+    <!--            <field name="model">academy.group</field>-->
+    <!--            <field name="arch" type="xml">-->
+    <!--                <search string="Search Partner Tag">-->
+    <!--                    <field name="name"/>-->
+    <!--                </search>-->
+    <!--            </field>-->
+    <!--        </record>-->
+
+    <!-- Boton de actions dentro de contactos -->
+    <menuitem
+        id="academy_group_menu"
+        action="academy_group_action"
+        name="Academy group"
+        parent="contacts.res_partner_menu_config"
+        sequence="4"
+    />
+
+</odoo>
