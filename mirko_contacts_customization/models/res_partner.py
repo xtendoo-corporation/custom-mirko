@@ -16,3 +16,15 @@ class ResPartner(models.Model):
         default="others",
         required=True,
     )
+    teacher_id = fields.Many2one(
+        comodel_name="res.partner",
+        string="Teacher"
+    )
+    # students_ids = fields.One2many(
+    #     comodel_name="res.partner",
+    #     string="Students"
+    # )
+
+
+
+
