@@ -5,9 +5,29 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-        <xpath expr="//span[@name='address_name']" position="before">
+            <xpath expr="//field[@name='vat']" position="after">
                 <field name="type_contact" class="oe_inline"/>
-        </xpath>
-         </field>
+            </xpath>
+        </field>
     </record>
+
+    <record id="view_res_partner_filter_mirko_vincenzo" model="ir.ui.view">
+        <field name="name">res.partner.select.mirko.vincenzo</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='type_person']" position="after">
+                <filter name="students" string="Students" domain="[('type_contact', '=', 'student')]"
+                        help="Show only students"/>
+                <filter name="teachers" string="Teachers" domain="[('type_contact', '=', 'teacher')]"
+                        help="Show only teachers"/>
+                <filter name="others" string="Others" domain="[('type_contact', '=', 'others')]"
+                        help="Show only others"/>
+            </xpath>
+            <xpath expr="//group[@name='group_by']" position="inside">
+                <filter name="contacts" string="Contacts" context="{'group_by': 'type_contact'}"/>
+            </xpath>
+        </field>
+    </record>
+
 </odoo>
