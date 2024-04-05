@@ -1,0 +1,100 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mirko_academy_groups
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-05 08:45+0000\n"
+"PO-Revision-Date: 2024-04-05 08:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mirko_academy_groups
+#: model:ir.actions.act_window,name:mirko_academy_groups.academy_group_action
+msgid "Academy Group"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model.fields,field_description:mirko_academy_groups.field_academy_group__name
+#: model:ir.model.fields,field_description:mirko_academy_groups.field_res_partner__academy_group_id
+#: model:ir.model.fields,field_description:mirko_academy_groups.field_res_users__academy_group_id
+#: model:ir.ui.menu,name:mirko_academy_groups.academy_group_menu
+#: model_terms:ir.ui.view,arch_db:mirko_academy_groups.academy_group_form
+msgid "Academy group"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model,name:mirko_academy_groups.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model_terms:ir.actions.act_window,help:mirko_academy_groups.academy_group_action
+msgid "Create a Academy group"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model.fields,field_description:mirko_academy_groups.field_academy_group__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model.fields,field_description:mirko_academy_groups.field_academy_group__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model.fields,field_description:mirko_academy_groups.field_academy_group__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model_terms:ir.ui.view,arch_db:mirko_academy_groups.academy_group_form
+msgid "Group name"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model.fields,field_description:mirko_academy_groups.field_academy_group__id
+msgid "ID"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model.fields,field_description:mirko_academy_groups.field_academy_group____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model.fields,field_description:mirko_academy_groups.field_academy_group__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model.fields,field_description:mirko_academy_groups.field_academy_group__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model_terms:ir.ui.view,arch_db:mirko_academy_groups.res_partner_view_mirko_academy
+msgid "Select a group"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model.fields,field_description:mirko_academy_groups.field_academy_group__res_partner_ids
+msgid "Students"
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model.constraint,message:mirko_academy_groups.constraint_academy_group_name_unique
+msgid "The name of the group must be unique."
+msgstr ""
+
+#. module: mirko_academy_groups
+#: model:ir.model,name:mirko_academy_groups.model_academy_group
+msgid "academy.group"
+msgstr ""

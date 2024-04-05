@@ -1,5 +1,5 @@
 {
-    "name": "Mirko Academy groups",
+    "name": "Mirko Vincenzo Vullo",
     "summary": "Contacts students, parents and teachers",
     "version": "16.0.1.0.0",
     "category": "Contacts",
@@ -10,9 +10,7 @@
         "contacts",
     ],
     "data": [
-        "views/academy_group_view.xml",
-        'views/res_partner_view.xml',
-        'security/ir.model.access.csv',
+        "views/res_partner_view.xml",
     ],
     "installable": True,
 }
