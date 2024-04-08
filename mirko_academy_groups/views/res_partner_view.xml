@@ -5,8 +5,8 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='vat']" position="after">
-                <field name="academy_group_id" options="{'no_create': True}"  placeholder="Select a group"/>
+            <xpath expr="//field[@name='type_contact']" position="before" >
+                <field name="academy_group_id" options="{'no_create': True}"  placeholder="Select a group" attrs="{'invisible': ['|', ('type_contact', '=', 'teacher'), ('type_contact', '=', 'others')]}"/>
             </xpath>
         </field>
     </record>

@@ -11,3 +11,5 @@ class ResPartner(models.Model):
         comodel_name="academy.group",
         string="Academy group",
     )
+
+

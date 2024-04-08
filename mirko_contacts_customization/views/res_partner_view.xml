@@ -7,8 +7,9 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='vat']" position="after">
                 <field name="type_contact" class="oe_inline"/>
-                <field name="teacher_id" class="oe_inline"  attrs="{'invisible': [('type_contact', '=', 'teacher')]}"/>
-<!--                 <field name="students_ids" class="oe_inline"  attrs="{'invisible': [('type_contact', '=', 'student')]}"/>-->
+                <field name="teacher_id" class="oe_inline" attrs="{'invisible': ['|', ('type_contact', '=', 'teacher'),
+                 ('type_contact', '=', 'others')]}" domain="[('type_contact','=', 'teacher')]"/>
+                <!--                 <field name="students_ids" class="oe_inline"  attrs="{'invisible': [('type_contact', '=', 'student')]}"/>-->
             </xpath>
         </field>
     </record>

@@ -8,6 +8,7 @@
     "application": True,
     "depends": [
         "contacts",
+        "mirko_contacts_customization"
     ],
     "data": [
         "views/academy_group_view.xml",
