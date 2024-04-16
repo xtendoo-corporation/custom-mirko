@@ -17,6 +17,7 @@ msgstr ""
 
 #. module: mirko_academy_groups
 #: model:ir.actions.act_window,name:mirko_academy_groups.academy_group_action
+#: model:ir.ui.menu,name:mirko_academy_groups.academy_group_menu
 msgid "Academy Group"
 msgstr ""
 
@@ -79,7 +80,6 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: mirko_academy_groups
-#: model:ir.ui.menu,name:mirko_academy_groups.academy_group_menu
 #: model:ir.ui.menu,name:mirko_academy_groups.mirko_group
 msgid "Mirko Groups"
 msgstr ""
