@@ -21,7 +21,7 @@ class ResPartner(models.Model):
         comodel_name="res.partner",
         string="Teacher"
     )
-    # students_ids = fields.One2many(
-    #     comodel_name="res.partner",
-    #     string="Students"
-    # )
+
+    def _get_contact_name(self, partner, name):
+        return "%s, %s" % (name, partner.commercial_company_name or partner.sudo().parent_id.name)
+
