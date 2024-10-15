@@ -8,9 +8,11 @@
     "application": True,
     "depends": [
         "contacts",
+        "account",
     ],
     "data": [
         "views/res_partner_view.xml",
+        "views/account_report_view.xml"
     ],
     "installable": True,
 }

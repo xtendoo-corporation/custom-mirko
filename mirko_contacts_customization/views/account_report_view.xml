@@ -1,0 +1,42 @@
+<odoo>
+    <template id="report_payment_receipt_document_inherit" inherit_id="account.report_payment_receipt_document">
+           <xpath expr="//div[@class='page']" position="replace">
+        <div class="page">
+                <h1><strong>Payment Receipt: <span t-field="o.name"/></strong></h1>
+                <div class="mb-4 mt-3" style="font-size: 24px;">
+                    <div class="row">
+                        <div class="col-6" t-if="o.date">
+                            <b>Payment Date:</b> <span t-field="o.date"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6" t-if="o.partner_type">
+                            <t t-if="o.partner_type == 'customer'">
+                                <b>Customer:</b>
+                            </t>
+                            <t t-if="o.partner_type == 'supplier'">
+                                <b>Vendor:</b>
+                            </t><span t-field="o.partner_id"/>
+                        </div>
+                        <div class="col-6" t-if="o.payment_method_id">
+                            <b>Payment Method:</b> <span t-field="o.payment_method_id.name"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6" t-if="o.amount">
+                            <b>Payment Amount:</b> <span t-field="o.amount" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
+                         </div>
+                        <div class="col-6" t-if="o.ref">
+                            <b>Memo:</b> <span t-field="o.ref"/>
+                         </div>
+                    </div>
+                </div>
+
+                <t t-set="invoices" t-value="o.reconciled_invoice_ids or o.reconciled_bill_ids"/>
+                <t t-foreach="invoices" t-as="inv">
+                    <t t-if="any(inv.currency_id != par[2].currency_id for par in inv._get_reconciled_invoices_partials()[0])" t-set="otherCurrency" t-value="True"/>
+                </t>
+        </div>
+        </xpath>
+    </template>
+</odoo>
