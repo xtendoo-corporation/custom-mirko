@@ -5,13 +5,6 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//div[@class='oe_button_box']" position="inside">
-                <button name="%(mirko_contacts_customization.action_report_contact)d"
-                        type="action"
-                        string="Print Contact"
-                        class="btn-primary"
-                        icon="fa fa-print"/>
-            </xpath>
             <xpath expr="//field[@name='vat']" position="after">
                 <field name="type_contact" class="oe_inline"/>
                 <field name="teacher_id" class="oe_inline" attrs="{'invisible': ['|', ('type_contact', '=', 'teacher'),
