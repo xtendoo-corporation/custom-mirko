@@ -12,7 +12,7 @@
                     <div class="row">
                         <div class="col-6" t-if="o.partner_type">
                             <t t-if="o.partner_type == 'customer'">
-                                <b>Customer:</b>
+                                <b>Customer: </b>
                             </t>
                             <t t-if="o.partner_type == 'supplier'">
                                 <b>Vendor:</b>

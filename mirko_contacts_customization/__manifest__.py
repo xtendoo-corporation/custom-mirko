@@ -12,7 +12,6 @@
     ],
     "data": [
         "views/res_partner_view.xml",
-        "views/account_report_view.xml"
     ],
     "installable": True,
 }
