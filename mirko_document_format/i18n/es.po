@@ -23,7 +23,7 @@ msgstr "<b>Cliente: </b>"
 #. module: mirko_document_format
 #: model_terms:ir.ui.view,arch_db:mirko_document_format.report_payment_receipt_document_inherit
 msgid "<b>Invoice number:</b>"
-msgstr "Nº Factura:"
+msgstr "<b>Nº Factura:</b>"
 
 #. module: mirko_document_format
 #: model_terms:ir.ui.view,arch_db:mirko_document_format.report_payment_receipt_document_inherit
@@ -38,7 +38,7 @@ msgstr "<b>Fecha de pago:</b>"
 #. module: mirko_document_format
 #: model_terms:ir.ui.view,arch_db:mirko_document_format.report_payment_receipt_document_inherit
 msgid "<b>Payment method:</b>"
-msgstr "Método de pago:"
+msgstr "<b>Método de pago:</b>"
 
 #. module: mirko_document_format
 #: model_terms:ir.ui.view,arch_db:mirko_document_format.report_payment_receipt_document_inherit
