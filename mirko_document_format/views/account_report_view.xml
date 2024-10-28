@@ -19,7 +19,7 @@
                             </t><span t-field="o.partner_id"/>
                         </div>
                         <div class="col-6" t-if="o.payment_method_id">
-                            <b>Journal:</b> <span t-field="o.journal_id.name"/>
+                            <b>Payment method:</b> <span t-field="o.journal_id.name"/>
                         </div>
                     </div>
                     <div class="row">
@@ -27,7 +27,7 @@
                             <b>Payment Amount:</b> <span t-field="o.amount" t-options="{'widget': 'monetary', 'display_currency': o.currency_id}"/>
                          </div>
                         <div class="col-6" t-if="o.ref">
-                            <b>Memo:</b> <span t-field="o.ref"/>
+                            <b>Invoice number:</b> <span t-field="o.ref"/>
                          </div>
                     </div>
                 </div>
