@@ -66,4 +66,15 @@
         </div>
         </xpath>
     </template>
+
+    <template id="report_invoice_document_inherit" inherit_id="account.report_invoice_document">
+        <xpath expr="//th[@name='th_priceunit']" position="replace">
+            <th name="th_priceunit" t-attf-class="text-end {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}"><span>Precio</span></th>
+        </xpath>
+        <xpath expr="//p[@name='payment_communication']" position="after">
+            <t t-if="o.journal_id.name == 'Facturas de IVA'">
+                <b>Modo de pago:</b> <span t-field="o.payment_mode_id.name"/>
+            </t>
+        </xpath>
+    </template>
 </odoo>
